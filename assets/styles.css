@@ -1,0 +1,331 @@
+/* ===========
+  UNIVERSAL
+=============== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========
+  BODY
+=============== */
+
+body{
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* =============================================================
+  BACKGROUND_IMAGE AND THE FLEX BETWEEN THE NEWSLETTER CONTAINER
+================================================================*/
+
+.home_bg{
+    background: url(./bg/bg1.jpg);
+    background-size: 100% auto;
+    height: 25em;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ================
+  THE NAV_BAR AND nav-bar_link
+==================== */
+
+.nav_bar,
+.nav_bar > .nav-bar_link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: center;
+}
+
+/* ===========
+  SITE_TITLE
+=============== */
+
+.site_title{
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+    .site_title::first-letter{
+      color: #3399ff;
+      font-size: 1.5em;
+    }
+
+/*=======
+  LIST
+========= */
+
+li{
+    list-style: none;
+}
+
+/*=============
+  NAV_BAR LINKS
+===============*/
+.nav-bar_link > li > a:link{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* visited link */
+.nav-bar_link > li > a:visited:not(.active){
+    color: whitesmoke;
+}
+
+/* mouse over link */
+.nav-bar_link > li > a:hover:not(.active){
+    color: #3399ff;
+    background: white;
+    padding: 7px;
+    border-radius: 3.5px;
+
+}
+
+/* selected link */
+.nav-bar_link > li > a:active:not(.active){
+    color: #dcdcdc;
+    background: linear-gradient(-110deg,#95b3f0,#3399ff);
+}
+
+.active{
+    background: linear-gradient(-110deg,#95b3f0,#3399ff);
+    padding: 7px;
+    border-radius: 3.5px;
+    color: white;
+
+}
+
+/*=====================
+  NAV AND ITS BACKGROUND
+========================*/
+
+.nav_bar{
+    background-color: rgba(51, 56, 51, 0.9);
+    padding: 20px 10px;
+}
+
+
+/*==========
+  NEWSLETTER
+============*/
+
+.newsletter{
+    padding: 15px 10px;
+    width: 100%;
+    background-color: rgba(51, 56, 51, 0.6);   
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+}
+
+/* newsletter site title*/
+
+.site-title{
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+} 
+
+    .site-title::first-letter{
+        color: #3399ff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+    }
+
+/*form input*/
+
+input{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[placeholder~="Enter"]{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+
+
+
+/*form button*/
+
+button{
+    padding: 10px;
+    background: linear-gradient(-110deg,#3399ff,#95b3f0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+button:hover {
+    background: white;
+    color: #3399ff;
+}
+  
+button:active {
+    transform: translateY(0.5px);
+}
+
+/*=====================
+  THIRD SECTION ID="BOX"
+========================*/
+
+#boxes{
+    background-image: url(./bg/img.png);
+    /* background-position: center; */
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 1em;
+    background: rgba(5, 8, 6, 0.5);
+}
+
+
+.box{
+    margin: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+.box > img{
+    align-self: center;
+}
+
+
+.link-img{
+    color: white;
+    text-decoration: none;
+}
+
+.link-img:visited{
+    color: thistle;
+}
+
+
+.link-img:hover{
+    color: #3399ff;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+
+.link-img:active{
+    color: #dcdcdc;
+}
+
+.footer{
+    padding: 10px 15px;
+    background-color: rgba(51, 56, 51, 0.9);
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.ti{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footers{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.site-title{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+    .site-title::first-letter{
+      color: #3399ff;
+      font-size: 1.2em;
+    }
+
+.footers > li > a{
+    color: white;
+}    
+
+.footers > li > a:hover{
+    color: #3399ff;
+    text-decoration: none;
+}
+
+/*==========
+  MEDIAQUERY
+============*/
+@media (max-width: 425px){
+    .home_bg{
+        background: url(../img/istockphoto-1298861980-612x612.jpg);
+        background-position: center;
+        }
+
+        
+
+        .site-title::first-letter{
+            color: orange;
+            /* font-size: 1.2em; */
+          }
+}
+
+@media (min-width: 600px){
+    .service{
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;        
+    }
+ 
+ 
+    form{
+        display: flex;
+        gap: 1em;
+    } 
+
+    input{
+        width: 70%;
+    }
+
+
+    button{
+        width: 30%;
+    }
+
+    #boxes{
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+} 
